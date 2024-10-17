@@ -10,7 +10,7 @@ from transformers import (
     WhisperForConditionalGeneration,
     pipeline
 )
-
+from utils.time_wrapper import timing_decorator
 
 def download_file(url, local_filename):
     """Helper function to download a file from a URL."""
@@ -21,7 +21,7 @@ def download_file(url, local_filename):
                 f.write(chunk)
     return local_filename
 
-
+@timing_decorator
 def run_whisper_inference(audio_path, chunk_length, batch_size, language, task):
     """Run Whisper model inference on the given audio file."""
     model_id = "openai/whisper-large-v3"
