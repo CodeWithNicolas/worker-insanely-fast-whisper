@@ -38,5 +38,4 @@ ADD src .
 # Verify that the cache folder is not empty
 RUN test -n "$(ls -A /cache/huggingface)"
 
-
 CMD ["python", "-u", "handler.py"]
