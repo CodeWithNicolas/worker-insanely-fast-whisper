@@ -8,7 +8,6 @@ ENV HF_HOME="/cache/huggingface"
 ENV HF_DATASETS_CACHE="/cache/huggingface/datasets"
 ENV DEFAULT_HF_METRICS_CACHE="/cache/huggingface/metrics"
 ENV DEFAULT_HF_MODULES_CACHE="/cache/huggingface/modules"
-
 ENV HUGGINFACE_HUB_CACHE="/cache/huggingface/hub"
 ENV HUGGINGFACE_ASSETS_CACHE="/cache/huggingface/assets"
 
